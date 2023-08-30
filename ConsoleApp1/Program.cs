@@ -13,7 +13,7 @@ namespace Ejercicio4
         //declaramos variables
 
         double baseRec, alturaRec, radioCir, ladoCua, lado1Tri, lado2Tri, lado3Tri, sAreaTri, areaCua, perCua, 
-            areaRec, perRec, areacir, perCir, areaTri, pertri;
+            areaRec, perRec, areacir, perCir, areaTri, pertri, s2Areatri;
 
         
         //declaracion de constantes
@@ -48,6 +48,32 @@ namespace Ejercicio4
             lado2Tri = Convert.ToDouble(Console.ReadLine());
             Console.Write("Lado3: ");
             lado3Tri = Convert.ToDouble(Console.ReadLine());
+
+            //Procedimiento
+
+            //cuadrado
+            areaCua = 4 * ladoCua;
+            perCua = Math.Pow(ladoCua, 2);
+
+            //rectangulo
+            areaRec = baseRec * alturaRec;
+            perRec = (2 * baseRec) + (2 * alturaRec);
+
+            //circulo
+            areacir = PI * (Math.Pow(radioCir, 2));
+            perCir = (2 * PI) * radioCir;
+
+            //TRIANGULO
+            sAreaTri = (lado1Tri + lado2Tri + lado3Tri) / 2;
+            
+            
+            //s2Areatri = (((sAreaTri) - (lado1Tri)) (sAreaTri - lado2Tri)(sAreaTri - lado3Tri));
+            //areaTri = Math.Pow((), 2);
+
+
+
+
+
 
 
 
