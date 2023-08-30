@@ -32,17 +32,16 @@ namespace Ejercicio3
 
                 //Procedimiento
 
-                comision = (venta1 + venta2 + venta3) * (PORCENTAGECOMISION / 10);
+                comision = (venta1 + venta2 + venta3) * (PORCENTAGECOMISION / 100);
 
                 salarioTotal = comision + sueldoBase;
 
                 //Imprimir resultado
 
-                Console.WriteLine($"El salario total recibido es: ${salarioTotal} ");
-                Console.WriteLine($"La Comision total recibida es: $ {comision} ");
+                Console.WriteLine($"El salario total recibido es: ${salarioTotal}");
+                Console.WriteLine($"La Comision total recibida es: $ {comision}");
 
         }
     }
 }
 
-1
