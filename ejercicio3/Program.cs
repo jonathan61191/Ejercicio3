@@ -7,33 +7,42 @@
 namespace Ejercicio3
 {
     public class Program
-{
-    static void Main(string[] args)
     {
-            //Declaracion de variables
+        static void Main(string[] args)
+        {
+                //Declaracion de variables
 
-            decimal sueldoBase, venta1, venta2, venta3, salarioTotal, comision;
+                decimal sueldoBase, venta1, venta2, venta3, salarioTotal, comision;
 
-            //solicitar variables por pantalla
+                const decimal PORCENTAGECOMISION= 10;
 
-            Console.WriteLine("Ingrese su sueldo Base: ");
-            sueldoBase = Convert.ToDecimal(Console.ReadLine());
+                //solicitar variables por pantalla
 
-            Console.WriteLine("Ingrese su Venta1: ");
-            venta1 = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine("Ingrese su sueldo Base: ");
+                sueldoBase = Convert.ToDecimal(Console.ReadLine());
 
-            Console.WriteLine("Ingrese su Venta2: ");
-            venta2 = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine("Ingrese su Venta1: ");
+                venta1 = Convert.ToDecimal(Console.ReadLine());
 
-            Console.WriteLine("Ingrese su Venta3: ");
-            venta3 = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine("Ingrese su Venta2: ");
+                venta2 = Convert.ToDecimal(Console.ReadLine());
 
+                Console.WriteLine("Ingrese su Venta3: ");
+                venta3 = Convert.ToDecimal(Console.ReadLine());
 
+                //Procedimiento
 
+                comision = (venta1 + venta2 + venta3) * (PORCENTAGECOMISION / 10);
 
+                salarioTotal = comision + sueldoBase;
 
+                //Imprimir resultado
+
+                Console.WriteLine($"El salario total recibido es: ${salarioTotal} ");
+                Console.WriteLine($"La Comision total recibida es: $ {comision} ");
 
         }
-}
+    }
 }
 
+1
