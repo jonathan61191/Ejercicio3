@@ -65,20 +65,8 @@ namespace Ejercicio4
 
             //TRIANGULO
             sAreaTri = (lado1Tri + lado2Tri + lado3Tri) / 2;
-            
-            
-            //s2Areatri = (((sAreaTri) - (lado1Tri)) (sAreaTri - lado2Tri)(sAreaTri - lado3Tri));
-            //areaTri = Math.Pow((), 2);
-
-
-
-
-
-
-
-
-
-
+            s2Areatri = sAreaTri * ((sAreaTri - lado1Tri)*(sAreaTri -lado2Tri)*(sAreaTri-lado3Tri));     
+            areaTri = Math.Pow((s2Areatri), 1/2);
 
 
 
