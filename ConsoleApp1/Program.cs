@@ -52,8 +52,8 @@ namespace Ejercicio4
             //Procedimiento
 
             //cuadrado
-            areaCua = 4 * ladoCua;
-            perCua = Math.Pow(ladoCua, 2);
+            perCua = 4 * ladoCua;
+            areaCua = Math.Pow(ladoCua, 2);
 
             //rectangulo
             areaRec = baseRec * alturaRec;
@@ -66,7 +66,28 @@ namespace Ejercicio4
             //TRIANGULO
             sAreaTri = (lado1Tri + lado2Tri + lado3Tri) / 2;
             s2Areatri = sAreaTri * ((sAreaTri - lado1Tri)*(sAreaTri -lado2Tri)*(sAreaTri-lado3Tri));     
-            areaTri = Math.Pow((s2Areatri), 1/2);
+            areaTri = Math.Sqrt(s2Areatri);
+            pertri = lado1Tri + lado2Tri + lado3Tri;
+
+            //imprimir resiltado
+
+            Console.Write("El area del cuadrado es: " + areaCua);
+            Console.Write("\n");
+            Console.Write("El perimetro del cuadrado es: " + perCua);
+            Console.Write("\n");
+            Console.Write("El area del rectangulo es: " + areaRec);
+            Console.Write("\n");
+            Console.Write("El perimetro del rectangulo es: " + perRec);
+            Console.Write("\n");
+            Console.Write("El area del circulo es: " + areacir );
+            Console.Write("\n");
+            Console.Write("El perimetro del circulo es: " + perCir);
+            Console.Write("\n");
+            Console.Write("El area del triangulo es: " + areaTri);
+            Console.Write("\n");
+            Console.Write("El perimetro del triangulo es: " + pertri );
+            Console.Write("\n");
+
 
 
 
